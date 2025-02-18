@@ -1,0 +1,43 @@
+
+
+/* ==============================================================
+    # Preloader CSS
+=================================================================== */
+.preloader svg {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 110vh;
+    fill: var(--white);
+}
+.animate-stroke {
+    animation: strokeAnimation 2s forwards;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    stroke-width: 2;
+    fill: transparent;
+    stroke: white;
+}
+
+@keyframes strokeAnimation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes loading {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes loading {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
